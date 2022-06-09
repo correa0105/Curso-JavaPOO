@@ -1,0 +1,33 @@
+package aula06;
+public class Funcionario extends Pessoa{
+    
+    private String setor;
+    private boolean trabalhando;;
+
+    public String getSetor() {
+        return setor;
+    }
+
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }
+
+    public boolean isTrabalhando() {
+        return trabalhando;
+    }
+
+    public void setTrabalhando(boolean trabalhando) {
+        this.trabalhando = trabalhando;
+    }
+    
+    //MÉTODO INTERNO
+    public void mudarTrabalho(){
+        if(isTrabalhando()){
+            this.setTrabalhando(false);
+        }else{
+            this.setTrabalhando(true);
+        }
+    }
+    
+      
+}
